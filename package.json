@@ -1,0 +1,21 @@
+{
+  "name": "compact-esports",
+  "version": "1.0.0",
+  "description": "Discord Bot for Compact Esports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Bitten & Adject",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "node-os-utils": "^1.3.7",
+    "path": "^0.12.7"
+  }
+}
