@@ -8,8 +8,9 @@ module.exports = {
     .addStringOption(option =>
         option
         .setName('code')
-        .setDescription('Code to evaluate')
-        .setRequired(true)),
+            .setDescription('Code to evaluate')
+        .setRequired(true))
+        .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
     async execute (interaction) {
         if (!owners.includes(interaction.user.id)) return interaction.reply('\`\`\`Owners only.\`\`\`');
