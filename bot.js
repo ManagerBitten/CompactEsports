@@ -27,19 +27,11 @@ for (const file of commandFiles) {
 
 client.on('ready', () => {
     console.log(client.user.tag + ' is online.')
-    client.guilds.cache.forEach(server => { server.members.fetch().then() });
-    client.guilds.cache.forEach(server => { server.roles.fetch().then() });
-    client.guilds.cache.forEach(server => { server.channels.fetch().then() });
-
     client.guilds.cache.forEach(server => { 
         server.members.fetch().then((all_users) => {
         });
-    });
-    client.guilds.cache.forEach(server => { 
         server.roles.fetch().then((all_roles) => {
         });
-    });
-    client.guilds.cache.forEach(server => { 
         server.channels.fetch().then((all_channels) => {
         });
     });
@@ -49,12 +41,8 @@ client.on('ready', () => {
         client.guilds.cache.forEach(server => { 
             server.members.fetch().then((all_users) => {
             });
-        });
-        client.guilds.cache.forEach(server => { 
             server.roles.fetch().then((all_roles) => {
             });
-        });
-        client.guilds.cache.forEach(server => { 
             server.channels.fetch().then((all_channels) => {
             });
         });
